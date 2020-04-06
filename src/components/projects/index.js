@@ -48,7 +48,7 @@ const projects = () => {
                 img={MintDashBoardImg}
                 link="#"
                 title="MINT DASHBOARD"
-                repo="https://github.com/Adekoreday/MyBlog-koreythoughts-"
+                repo="https://github.com/Adekoreday/BANKWITHMINT"
                 details="A dashboard template developed with react"
                 ></Card>
             </div>
