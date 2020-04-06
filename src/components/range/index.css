@@ -1,0 +1,10 @@
+.range{
+    background-color: none;
+    margin:  0rem 1rem 1rem 1rem; 
+    padding: 2.6rem;
+    flex-grow: 1;
+}
+
+.range:last-child{
+    margin:  0rem 1rem 0rem 1rem; 
+}
