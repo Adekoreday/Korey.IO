@@ -1,11 +1,6 @@
 import React from 'react';
 import Card from '../cards';
 import './index.css';
-import PortfolioImg from '../../img/pic/portfolio.png';
-import BankaImg from '../../img/pic/banka.png';
-import VloginImg from '../../img/pic/vlogin.png';
-import IEventImg from '../../img/pic/eventApp.png';
-import MintDashBoardImg from '../../img/pic/mint.png'
 
 const projects = () => {
     return (
@@ -13,7 +8,7 @@ const projects = () => {
             <h1 className="projects__header">PROJECTS</h1>
             <div className="card__container">
                 <Card
-                img={PortfolioImg}
+                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_821,q_24/v1586213278/portfolio_gy1pgl.png"
                 link="#"
                 title="PORTFOLIO"
                 repo="https://github.com/Adekoreday/MyBlog-koreythoughts-"
@@ -21,7 +16,7 @@ const projects = () => {
                 ></Card>
 
                 <Card
-                img={BankaImg}
+                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_872,q_21/v1586213274/banka_e3m9bv.png"
                 link="#"
                 title="BANKA"
                 repo="https://github.com/Adekoreday/Banka-React"
@@ -29,7 +24,7 @@ const projects = () => {
                 ></Card>
 
                 <Card
-                img={VloginImg}
+                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_777/v1586213286/vlogin_epcjj4.png"
                 link="#"
                 title="VLOGIN"
                 repo="#"
@@ -37,7 +32,7 @@ const projects = () => {
                 ></Card>
 
 <Card
-                img={IEventImg}
+                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_668,q_20/v1586213284/eventApp_f3q7ms.png"
                 link="#"
                 title="EVENT"
                 repo="https://github.com/Adekoreday/IEvent"
@@ -45,7 +40,7 @@ const projects = () => {
                 ></Card>
 
                 <Card
-                img={MintDashBoardImg}
+                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_747,q_29/v1586213274/mint_knaezl.png"
                 link="#"
                 title="MINT DASHBOARD"
                 repo="https://github.com/Adekoreday/BANKWITHMINT"
