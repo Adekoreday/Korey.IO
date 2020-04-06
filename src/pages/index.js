@@ -5,7 +5,8 @@ import "./index.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Main from "../components/main/main"
-import Hero from "../components/hero/index"
+import Hero from "../components/hero"
+import Projects from "../components/projects"
 
 class IndexPage extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class IndexPage extends React.Component {
         />
       <Main />
       <Hero />
+      <Projects />
       </Layout>
     )
   }

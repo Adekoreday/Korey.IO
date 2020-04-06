@@ -1,0 +1,21 @@
+.projects__container{
+    background-image: url('../../img/pic/Screen\ Shot\ 2020-04-06\ at\ 8.34.53\ PM.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 79.1rem;
+    width: 100%;
+}
+
+.projects__header{
+ margin: 10rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card__container{
+    display: flex;
+    margin: 5rem 7rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0rem 7rem;
+}
