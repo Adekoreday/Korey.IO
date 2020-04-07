@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import Footer from './footer'
 import { rhythm, scale } from "../utils/typography"
+import Header from '../components/header'
 
 class Layout extends React.Component {
   render() {
@@ -59,11 +60,14 @@ class Layout extends React.Component {
             maxWidth: rhythm(90),
           }}
         >
+          <Header/>
           <main>{children}</main>
         </div>
-        <Footer>
+       { (location.pathname === '/') ?
+          <Footer>
           © {new Date().getFullYear()}
-        </Footer>
+        </Footer> : ''
+       }
       </Wrapper>
     )
   }

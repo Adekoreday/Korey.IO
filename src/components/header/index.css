@@ -1,0 +1,27 @@
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    margin: 2rem 3rem;
+}
+
+.heaer__details{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70%;
+}
+
+a{
+    text-decoration: none;
+    box-shadow: none;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: 'Muli';
+}
+
+.header_item {
+    margin-right: 3rem;
+}
