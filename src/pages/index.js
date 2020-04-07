@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Main from "../components/main/main"
 import Hero from "../components/hero"
 import Projects from "../components/projects"
+import Footer from '../components/footer'
 
 class IndexPage extends React.Component {
   render() {

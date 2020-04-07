@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
+import Footer from './footer'
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -73,9 +73,9 @@ const Wrapper = styled.div`
   min-height: 100vh;
 `
 
-const Footer = styled.footer`
+/*const Footer = styled.footer`
   text-align: center;
   margin: 24px;
-`
+`*/
 
 export default Layout
