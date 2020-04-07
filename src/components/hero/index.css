@@ -7,20 +7,31 @@
     animation: moveInTop .5s ease-out .75s;
 }
 
-@keyframes moveInTop{
-    0% {
-      transform: translateY(10rem);
-      opacity: 0;
-    }
-    80% {
-      transform: translateY(5rem);
-      opacity: 0.8;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@media only screen and (max-width: 1024px) {
+.hero__container{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container{
+  flex-direction: column;
+  margin-top: 0rem;
   }
+
+  .hero__layout{
+    flex-direction: column;   
+  }
+  .projects__header{
+    margin: 5rem;
+  }
+
+  .card__container{
+    overflow: scroll;
+    margin: 0rem;
+    padding: 0rem !important;
+    height: 70%;
+  }
+}
 
 .hero__container--secondary{
     height: 39.5rem;
