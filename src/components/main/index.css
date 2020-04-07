@@ -5,6 +5,28 @@
     justify-content: flex-start;
 }
 
+@media only screen and (max-width: 1024px) {
+.main__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.text__container{
+
+    margin-right: 10rem !important;
+    margin-top: 2rem !important;
+}
+
+.smaller__bg{
+    display: none;
+}
+
+
+.side__img{
+    display: none;   
+    }
+}
+
 .main__bg{
     flex-grow: 1;
 }
@@ -62,7 +84,7 @@
 }
 
 .text__container{
-    margin-right: 25rem;
+    margin-right: 20rem;
     margin-top: 20rem;
 }
 .profile__img{
