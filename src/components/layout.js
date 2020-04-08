@@ -66,7 +66,7 @@ class Layout extends React.Component {
        { (location.pathname === '/') ?
           <Footer>
           © {new Date().getFullYear()}
-        </Footer> : ''
+        </Footer> : <div className="footer__two"> Adeyemi Adekorede  © {new Date().getFullYear()}</div>
        }
       </Wrapper>
     )

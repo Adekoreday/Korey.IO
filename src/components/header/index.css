@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,700;1,900&display=swap" rel="stylesheet');
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: flex-start;
     color: #FFFFFF;
-    margin: 3rem;
+    padding: 3rem;
+    background-color: #FFFFFF;
+    z-index: 100;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 .heaer__details{
@@ -12,16 +21,11 @@
     margin-left: 70%;
 }
 
-a{
-    text-decoration: none;
-    box-shadow: none;
+.header_item {
+    margin-right: 3rem;
     color: #000000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
-    font-family: 'Muli';
-}
-
-.header_item {
-    margin-right: 3rem;
+    font-family: 'Montserrat';
 }

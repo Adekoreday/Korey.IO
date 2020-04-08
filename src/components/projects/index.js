@@ -20,7 +20,7 @@ const projects = () => {
                 link="#"
                 title="BANKA"
                 repo="https://github.com/Adekoreday/Banka-React"
-                details="A banking application that supports medium/small scale banking operations"
+                details="banking app for medium/small scale banking operations"
                 ></Card>
 
                 <Card
