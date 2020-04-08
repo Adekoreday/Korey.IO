@@ -117,6 +117,15 @@ data-sal-easing="easeInBack"
                 <span className="medium__text">75%</span>
                 </div>
             </div>
+            <div>
+                <div className="range__container">
+                <span className="inline__text">CI (TRAVIS,AZURE,CIRCLE CI)</span>
+                <Range 
+                proficiency={70}
+                />
+                <span className="medium__text">70%</span>
+                </div>
+            </div>
         </div>
         <div className="hero__container--secondary">
         <h1 style={{ color: `#FFFFFF`}}>DEVOPS</h1>
@@ -147,7 +156,7 @@ data-sal-easing="easeInBack"
             </div>
             <div>
                 <div className="range__container">
-                <span className="inline__text">TRAVIS CI</span>
+                <span className="inline__text">DOCKER</span>
                 <Range 
                 proficiency={70}
                 />

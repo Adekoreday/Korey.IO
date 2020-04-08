@@ -1,1 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,700;1,900&display=swap" rel="stylesheet');
+
+*,body {
+    margin: 0;
+    font-family: 'Muli', 'sans-serif';
+  }
+  
+  a{
+    text-decoration: none;
+    box-shadow: none;
+    color: inherit;
+}
+
+  html{
+    font-size: 10px;
+  }
+  

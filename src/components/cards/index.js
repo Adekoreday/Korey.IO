@@ -5,7 +5,12 @@ import GhImg from '../../img/svg/ghImg.svg'
 const Card = (props) => {
     const {img, title, link, details, repo} = props
     return (
-        <div className="card">
+        <div 
+        data-sal="slide-up"
+        data-sal-duration="10000"
+        data-sal-delay="300"
+        data-sal-easing="easeInBack"
+        className="card">
             <div className="card__imgContainer">
             <img className="card__img" src={img}></img>
             </div>

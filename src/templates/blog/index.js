@@ -2,10 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Bio from "../../components/bio"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { rhythm, scale } from "../../utils/typography"
+import './index.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -47,20 +48,6 @@ class BlogPostTemplate extends React.Component {
             padding: 0,
           }}
         >
-          <li>
-            {previous && (
-              <Link to={`blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
         </ul>
       </Layout>
     )
