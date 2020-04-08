@@ -4,7 +4,7 @@ module.exports = {
     title: `Adeyemi Adekorede Personal web app`,
     author: `Adeyemi Adekorede`,
     description: `A personal website with blog by adeyemi adekorede using gatsby`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://koreythoughts.netlify.com/`,
     social: {
       twitter: `AdeyemiAdekore2`,
     },
