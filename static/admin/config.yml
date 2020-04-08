@@ -15,5 +15,5 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: tags, label: Tags}
+      - { name: tags, label: Tags , widget: "list", field: {name: tag, label: Tag, widget: string}}
       - { name: body, label: Body, widget: markdown }
