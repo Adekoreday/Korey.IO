@@ -31,13 +31,13 @@ class Blog extends React.Component {
             return (
               <div className="post__content" key={node.fields.slug}>
                 <div className="list__main">
-                <div className="post__title">
-                  <Link
+                <Link
                     style={{ boxShadow: `none` }}
                     to={`${node.fields.slug}`}
                   >
+                <div className="post__title">
+
                     {title}
-                  </Link>
                 </div>
                 <div
                 className="post__details"
@@ -46,6 +46,7 @@ class Blog extends React.Component {
                   }}
                 />
                   <div className="icon__container"><img className="date__icon" src={DateImg} alt=""/><div><small >{node.frontmatter.date}</small></div></div>
+                  </Link>
                 </div>
                 <div>{tag !== null && <ul>{<Tag name={tag[0]} />}</ul>}</div>
               </div>
@@ -65,12 +66,12 @@ class Blog extends React.Component {
         >
           {!isFirst && (
             <Link to={prevPage} rel="prev">
-              <div className="navigation__link">← Previous Page</div>
+              <div className="navigation__link">← Newer Posts</div>
             </Link>
           )}
           {!isLast && (
             <Link to={nextPage} rel="next">
-             <div className="navigation__link">Next Page →</div> 
+             <div className="navigation__link">Older Post →</div> 
             </Link>
           )}
         </ul>

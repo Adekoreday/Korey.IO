@@ -1,0 +1,15 @@
+.page__content{
+    font-size: 16px;
+   line-height: 20px;
+   margin-bottom: 3rem;
+   font-family: 'Montserrat';
+}
+
+.post__header{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 3.5rem;
+    color: #000000;
+    margin: 15rem 0rem 3rem 0rem;
+}
