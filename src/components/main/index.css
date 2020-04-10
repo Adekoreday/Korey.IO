@@ -22,11 +22,10 @@
     margin:5rem 0rem 2rem 0rem !important;
     display: block;
     position: relative !important;
+    left:0% !important;
+    padding: 1rem;
 }
 
-.main__content{
-   display: none !important;
-}
 
 .bg__logo{
     margin: 0rem !important;
@@ -35,6 +34,8 @@
 
 .text__container{
     display: block;
+    padding: 1rem;
+    text-align: center;
     position: relative !important;
     margin-right: 0rem !important;
     margin-top: 0rem !important;
