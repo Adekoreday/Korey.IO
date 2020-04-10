@@ -4,6 +4,8 @@ date: 2020-04-10T18:15:02.071Z
 title: How To Build A reusable Modal in React
 description: This is a tutorial which consist of how to build a light weight
   modal component to suit your needs.
+tags:
+  - React
 ---
 Source code to this tutorial is found here {% github Adekoreday/Custom-React-Modal %}
 
