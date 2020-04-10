@@ -40,14 +40,14 @@ After I give the above answer I often get the following question  how are delega
 
 All the above at the same time.
 
-```c#
+```java
   private delegate void OnReport(string Message);
   private OnReport _onReport;
 ```
 
 from the above, we declare our delegate using the `delegate` keyword.
 
-```c#
+```java
   public void AddReportHandler(Action<string> action){
     _onReport += new OnReport(action);
   }
@@ -59,7 +59,7 @@ Note the parameter type of the handler is of type `Action`. this parameter type 
 
 The primary difference between `Action` and `Func` is that Action is used for method signatures that return a void, while `Func` is used for method signatures that have a return value. 
 
-```c#
+```java
   public void Report(string healthStatus) {
     if(_onReport != null) {
       _onReport(healthStatus);
@@ -71,7 +71,7 @@ We declare a single method `Report`, which would execute all functions appended 
 
 Here is the full implementation
 
-```c#
+```java
 using System;
 
 class MainClass {

@@ -20,9 +20,9 @@ className="hero__layout">
             <div >
                 <div className="range__container"><span className="inline__text">NodeJs</span>
                 <Range 
-                proficiency={90}
+                proficiency={75}
                 />
-                <span className="medium__text">90%</span>
+                <span className="medium__text">75%</span>
                 </div>
             </div>
             <div >
@@ -56,17 +56,17 @@ className="hero__layout">
         <div >
                 <div className="range__container"><span className="inline__text">React</span>
                 <Range 
-                proficiency={90}
+                proficiency={75}
                 />
-                <span className="medium__text">90%</span>
+                <span className="medium__text">75%</span>
                 </div>
             </div>
             <div >
                 <div className="range__container"><span className="inline__text">Redux </span>
                 <Range 
-                proficiency={80}
+                proficiency={70}
                 />
-                <span className="medium__text">80%</span>
+                <span className="medium__text">70%</span>
                 </div>
             </div>
             <div>
@@ -96,9 +96,9 @@ data-sal-easing="easeInBack"
             <div >
                 <div className="range__container"><span className="inline__text">JEST / ENZYME</span>
                 <Range 
-                proficiency={90}
+                proficiency={75}
                 />
-                <span className="medium__text">90%</span>
+                <span className="medium__text">75%</span>
                 </div>
             </div>
             <div >
@@ -112,9 +112,9 @@ data-sal-easing="easeInBack"
             <div >
                 <div className="range__container"><span className="inline__text">NUIT</span>
                 <Range 
-                proficiency={75}
+                proficiency={70}
                 />
-                <span className="medium__text">75%</span>
+                <span className="medium__text">70%</span>
                 </div>
             </div>
             <div>
@@ -134,15 +134,7 @@ data-sal-easing="easeInBack"
                 <Range 
                 proficiency={90}
                 />
-                <span className="medium__text">90%</span>
-                </div>
-            </div>
-            <div >
-                <div className="range__container"><span className="inline__text">AWS </span>
-                <Range 
-                proficiency={80}
-                />
-                <span className="medium__text">80%</span>
+                <span className="medium__text">70%</span>
                 </div>
             </div>
             <div>
