@@ -7,12 +7,10 @@ const Hero = () => {
         <div>
 
 <div 
-
 data-sal="slide-up"
 data-sal-duration="10000"
 data-sal-delay="300"
 data-sal-easing="easeInBack"
-
 className="hero__layout">
         <div 
         className="hero__container">
@@ -119,7 +117,7 @@ data-sal-easing="easeInBack"
             </div>
             <div>
                 <div className="range__container">
-                <span className="inline__text">CI (TRAVIS,AZURE,CIRCLE CI)</span>
+                <span className="inline__text">CI</span>
                 <Range 
                 proficiency={70}
                 />

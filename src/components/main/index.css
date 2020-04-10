@@ -10,12 +10,32 @@
 .main__container{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+}
+
+.main__profile{
+    top: 40% !important;
+
+}
+
+.main__content{
+
+    top: 34% !important;
+    left: 2.5% !important;
+
+}
+
+.bg__logo{
+    margin: 0rem !important;
 }
 
 .text__container{
 
-    margin-right: 10rem !important;
+    margin-right: 0rem !important;
     margin-top: 2rem !important;
+}
+.medium__bg{
+    display: none;
 }
 
 .smaller__bg{
@@ -27,6 +47,10 @@
     display: none;   
     }
 }
+
+
+
+
 
 .main__bg{
     flex-grow: 1;
@@ -46,7 +70,7 @@
 
 .medium__bg{
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 70%;
 }
 
@@ -80,12 +104,11 @@
 
 .profile__subtext{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .text__container{
-    margin-right: 20rem;
     margin-top: 20rem;
 }
 .profile__img{
