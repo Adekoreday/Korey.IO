@@ -3,7 +3,7 @@ path: ./content
 date: 2020-04-08T16:19:46.693Z
 title: 'Delegates in c#'
 description: 'Detailed explanation of delegates and it''s usage in c#'
-tags: ["c#"]
+tags: ["csharp"]
 ---
 Delegates in c# is  a concept which confuses some developers, if you fall into this category, worry not this article is meant to answer the following questions:
 

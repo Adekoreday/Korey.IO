@@ -4,7 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog/index.js`)
+  const blogPost = path.resolve(`./src/templates/blog/index.js`);
+  const tagTemplate = path.resolve(`./src/templates/tag/tags.js`);
   return graphql(
     `
       {
@@ -21,6 +22,11 @@ exports.createPages = ({ graphql, actions }) => {
                 title
               }
             }
+          }
+        }
+        tagsGroup: allMdx(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
           }
         }
       }
@@ -51,6 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
         // Create blog post list pages
         const postsPerPage = 3;
         const numPages = Math.ceil(posts.length / postsPerPage);
+        const tags = result.data.tagsGroup.group
     
         Array.from({ length: numPages }).forEach((_, i) => {
           createPage({
@@ -64,6 +71,16 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
+
+      tags.forEach(tag => {
+        createPage({
+          path: `/tags/${tag.fieldValue}/`,
+          component:  path.resolve('./src/templates/tag/index.js'),
+          context: {
+            tag: tag.fieldValue,
+          },
+        })
+      })
         return null;
   })
 }
