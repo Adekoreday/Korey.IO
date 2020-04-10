@@ -15,18 +15,16 @@
 
 .main__profile{
     top: 7% !important;
-
+    display: none !important;
 }
 
 .main__content{
-    top: 0% !important;
-    left: 0% !important;
-
+   display: none !important;
 }
 
 .bg__logo{
     margin: 0rem !important;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .text__container{
