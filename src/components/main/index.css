@@ -70,7 +70,7 @@
 
 .medium__bg{
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 70%;
 }
 
@@ -110,6 +110,8 @@
 
 .text__container{
     margin-top: 20rem;
+    margin-right: 10rem;
+
 }
 .profile__img{
     z-index: 100 !important;
