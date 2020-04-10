@@ -2,8 +2,6 @@
     margin: 10rem 30rem;
     font-family: 'Montserrat', 'muli', sans-serif;
     font-style: normal;
-   font-weight: 500;
-   font-size: 12px;
 }
 
 .list__content{
@@ -66,4 +64,10 @@ margin-bottom: 2rem;
     background-position: 100%;
     color: #ffffff;
     transform: translateX(1rem);
+}
+
+@media only screen and (max-width: 1024px) {
+    .list__container{
+        margin: 10rem 2rem 2rem 2rem; 
+    }
 }

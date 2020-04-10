@@ -25,7 +25,9 @@ const Main = () => {
             <div className="text__container">
             <div className="profile__text">Adeyemi</div>
             <div className="profile__text">Adekorede</div>
-            <div className="profile__subtext">Software Engineer</div>
+            <div className="profile__subtext">I'm a Software Engineer</div>
+            <div className="profile__subtext">based in Lagos, Nigeria. I'm passionate </div>
+            <div className="profile__subtext">about technology and Teaching.</div>
             </div>
             </div>
             <img className="smaller__bg" src={smBgSvg} alt="bg-logo" />

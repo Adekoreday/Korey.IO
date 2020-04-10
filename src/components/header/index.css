@@ -29,3 +29,11 @@
     font-weight: 700;
     font-family: 'Montserrat';
 }
+
+@media only screen and (max-width: 1024px) {
+.heaer__details{
+    margin-left: 0%; 
+    position: relative;
+}
+
+}

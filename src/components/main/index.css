@@ -8,14 +8,40 @@
 
 @media only screen and (max-width: 1024px) {
 .main__container{
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 100vw;
+}
+
+
+.main__bg{
+    flex-grow: 0 !important;
+}
+
+
+.main__profile{
+    margin:5rem 0rem 2rem 0rem !important;
+    display: block;
+    position: relative !important;
+    left:0% !important;
+    padding: 1rem;
+}
+
+
+.bg__logo{
+    margin: 0rem !important;
+    flex-direction: column !important;
 }
 
 .text__container{
-
-    margin-right: 10rem !important;
-    margin-top: 2rem !important;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    position: relative !important;
+    margin-right: 0rem !important;
+    margin-top: 0rem !important;
+}
+.medium__bg{
+    display: none;
 }
 
 .smaller__bg{
@@ -27,6 +53,10 @@
     display: none;   
     }
 }
+
+
+
+
 
 .main__bg{
     flex-grow: 1;
@@ -46,7 +76,7 @@
 
 .medium__bg{
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 70%;
 }
 
@@ -80,13 +110,14 @@
 
 .profile__subtext{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .text__container{
-    margin-right: 20rem;
     margin-top: 20rem;
+    margin-right: 10rem;
+
 }
 .profile__img{
     z-index: 100 !important;
