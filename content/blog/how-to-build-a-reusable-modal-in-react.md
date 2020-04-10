@@ -21,8 +21,26 @@ The question to ask is why would we want to implement a modal component from scr
 we create a modal.js file and add the following first
 
 ```javascript
+import React from 'react';
+import './modal.css';
+
+const Modal = (props) => {
+  const { closeModal } = props;
+  return (
+    <div className="overlay">
+      <div className="content">
+        { closeicon() }
+        {props.children}
+      </div>
+    </div>
+  );
+};
+
+export default Modal;
 
 ```
+
+
 
 the above is almost all we need to implement the modal component, what I did was to make the content of our modal (div styled as a content) a child of its parent container (div styled as an overlay).
 
@@ -33,6 +51,22 @@ Also, note the children of the modal component would be rendered inside the `con
 `npm i react-fontawesome`
 
 ```javascript
+   const closeicon = () => (
+    <FontAwesome
+    name="times"
+    onClick={closeModal}
+    style={{
+      color: '#000000',
+      padding: '10px',
+      cursor: 'pointer',
+      backgroundColor: 'transparent',
+      border: 0,
+      position: 'absolute',
+      top: '0.3rem',
+      right: '0.5rem',
+    }}
+    />
+  );
 
 ```
 
@@ -46,15 +80,79 @@ Note: you can always choose to use an icon within your project and apply the abo
 
 \###The whole component so far
 
+
 ```javascript
+import React from 'react';
+import './modal.css';
+import FontAwesome from 'react-fontawesome';
+
+const Modal = (props) => {
+  const { closeModal } = props;
+
+  const closeicon = () => (
+    <FontAwesome
+    name="times"
+    onClick={closeModal}
+    style={{
+      color: '#000000',
+      padding: '10px',
+      cursor: 'pointer',
+      backgroundColor: 'transparent',
+      border: 0,
+      position: 'absolute',
+      top: '0.3rem',
+      right: '0.5rem',
+    }}
+    />
+  );
+
+  return (
+    <div className="overlay">
+      <div className="content">
+        { closeicon() }
+        {props.children}
+      </div>
+    </div>
+  );
+};
+
+
+export default Modal;
 
 ```
+
+
 
 From the above, we can see that closeModal function was passed as props to the modal component.
 
 ```css
+.overlay {
+    position: fixed;
+    display: block; 
+    overflow: auto; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 999; 
+    cursor: pointer;
+  }
+
+.content {
+        margin: 15% auto;
+        background-color: white;
+        border-radius: 0.25rem;
+        width: 50vw;
+        padding: 2rem;
+        position: relative;
+  }
 
 ```
+
+
 
 from the CSS style above, things to note is includes:
 
@@ -66,8 +164,28 @@ These properties ensure the modal can scale up or down and be responsive.
 \###Making use of the modal component
 
 ```javascript
+import React,  { useState } from 'react';
+import Modal from './modal/modal';
+import './App.css';
 
+function App() {
+  const [status, setStatus] = useState(false);
+  return (
+    <div>
+         { status && (<Modal closeModal={() => setStatus(false)}> <p>The content of the modal</p></Modal>)}
+        <div className="container">
+        <h2>This is the page content</h2>
+        <button onClick={() => setStatus(true)}>Open Modal</button>
+        </div>
+
+    </div>
+  );
+}
+
+export default App;
 ```
+
+
 
 From the above, we rendered the Modal component conditionally. Onclick of the button it changes the status of the modal and renders the modal component.
 
