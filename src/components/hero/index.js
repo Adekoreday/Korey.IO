@@ -132,7 +132,7 @@ data-sal-easing="easeInBack"
         <div >
                 <div className="range__container"><span className="inline__text">AZURE</span>
                 <Range 
-                proficiency={90}
+                proficiency={70}
                 />
                 <span className="medium__text">70%</span>
                 </div>

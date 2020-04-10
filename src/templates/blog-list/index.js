@@ -48,7 +48,7 @@ class Blog extends React.Component {
                   <div className="icon__container"><img className="date__icon" src={DateImg} alt=""/><div><small >{node.frontmatter.date}</small></div></div>
                   </Link>
                 </div>
-                <div>{tag !== null && <ul>{<Tag name={tag[0]} />}</ul>}</div>
+                <Link to={`/tags/${tag[0]}`}><div>{tag !== null && <ul>{<Tag name={tag[0]} />}</ul>}</div></Link>
               </div>
             )
           })}
