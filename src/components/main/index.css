@@ -14,25 +14,25 @@
 }
 
 .main__profile{
-    top: 40% !important;
+    top: 7% !important;
 
 }
 
 .main__content{
-
-    top: 34% !important;
-    left: 2.5% !important;
+    top: 0% !important;
+    left: 0% !important;
 
 }
 
 .bg__logo{
     margin: 0rem !important;
+    flex-direction: column;
 }
 
 .text__container{
 
     margin-right: 0rem !important;
-    margin-top: 2rem !important;
+    margin-top: 0rem !important;
 }
 .medium__bg{
     display: none;
