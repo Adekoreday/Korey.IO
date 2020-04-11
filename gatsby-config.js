@@ -3,8 +3,8 @@ module.exports = {
     // edit below
     title: `Adeyemi Adekorede Personal web app`,
     author: `Adeyemi Adekorede`,
-    description: `A personal website with blog by adeyemi adekorede using gatsby`,
-    siteUrl: `https://koreythoughts.netlify.com/`,
+    description: `korey.io bits and pieces of codes to help accelerate learning`,
+    siteUrl: `https://koreyio.netlify.com/`,
     social: {
       twitter: `AdeyemiAdekore2`,
     },
@@ -68,14 +68,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `korey.io`,
+        short_name: `Korey.io`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-pic.jpg`,
       },
     },
     {
