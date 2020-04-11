@@ -108,7 +108,7 @@ data-sal-easing="easeInBack"
                 </div>
             </div>
             <div >
-                <div className="range__container"><span className="inline__text">NUIT</span>
+                <div className="range__container"><span className="inline__text">NUnit</span>
                 <Range 
                 proficiency={70}
                 />
