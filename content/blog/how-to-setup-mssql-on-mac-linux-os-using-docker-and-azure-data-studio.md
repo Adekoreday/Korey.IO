@@ -30,6 +30,33 @@ Run the command below to view all containers currently running on your machine.
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/4racpb360iz9p3zvf8ue.png)
 
-The rest of the article can be found on my dev.to page
 
-[Dev.to](https://dev.to/adeyemiadekore2/how-to-setup-mssql-on-mac-linux-os-using-docker-and-azure-data-studio-2p6m)
+The GUI tool we'll be using is [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
+
+Follow the link and download the azure data studio.
+
+currently, these are our details.
+Password: This is what we declared in SA_PASSWORD as earlier.
+Username: this value is `sa`
+Server: localhost
+
+Then fill out these details in Azure data studio.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/eqp9uq7v9juch2ctr53d.png)
+
+Lastly, since we might want to create a new database in the azure data studio
+Enter the following in the `new Query section` of the dashboard.
+
+```
+IF NOT EXISTS (
+   SELECT name
+   FROM sys.databases
+   WHERE name = N'DemoDB'
+)
+CREATE DATABASE [DemoDB]
+GO
+```
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/rv66meq4mslnf5kf2a1w.png)
+
+The above command creates a database called DemoDB. you can the connect to this database and run various actions like migrations or create tables manually.
+
