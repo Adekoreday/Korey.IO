@@ -1,14 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 import DateImg from '../../img/svg/date.svg'
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+
 // Components
 import { Link, graphql } from "gatsby"
-const Tags = ({ data }) => {
-  const { edges, totalCount } = data.allMdx
+const Tags = ({ data, location }) => {
+  const { edges, totalCount } = data.allMdx;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   }`
+  const siteTitle = data.site.siteMetadata.title
   return (
+    <Layout location={location} title={siteTitle}>
+            <SEO title="blogs tags"/>
     <div className="list__container">
       <h1>{tagHeader}</h1>
       <ul>
@@ -18,7 +24,7 @@ const Tags = ({ data }) => {
           return (
             <div className="post__content" key={slug}>
               <div className="list__main">
-              <Link to={slug}>{title}
+              <Link to={slug}>
               <div className="post__title">
                 {title}
             </div>
@@ -37,6 +43,7 @@ const Tags = ({ data }) => {
       </ul>
       <div className="navigation__link"><Link to="/tags">All tags</Link></div>
     </div>
+    </Layout>
   )
 }
 Tags.propTypes = {
@@ -64,6 +71,12 @@ Tags.propTypes = {
 export default Tags
 export const pageQuery = graphql`
   query($tag: String) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
     allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
