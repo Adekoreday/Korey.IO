@@ -4,7 +4,7 @@ module.exports = {
     title: `Adeyemi Adekorede Personal web app`,
     author: `Adeyemi Adekorede`,
     description: `korey.io bits and pieces of codes to help accelerate learning`,
-    siteUrl: `https://koreyio.netlify.com/`,
+    siteUrl: `https://koreyio.netlify.app/`,
     social: {
       twitter: `AdeyemiAdekore2`,
     },
