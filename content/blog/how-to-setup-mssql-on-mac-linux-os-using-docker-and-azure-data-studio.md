@@ -86,3 +86,14 @@ GO
 
 The above command creates a database called DemoDB. you can the connect to this database and run various actions like migrations or create tables manually.
 
+To connect to the DemoDB database we created, below is a typical connection string.
+
+```
+    String connectionString = @"
+      Server=127.0.0.1;
+      Database=DemoDB;
+      User Id=sa;
+      Password=yourPassword
+   ";
+```
+
