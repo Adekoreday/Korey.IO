@@ -3,8 +3,8 @@ module.exports = {
     // edit below
     title: `Adeyemi Adekorede Personal web app`,
     author: `Adeyemi Adekorede`,
-    description: `korey.io bits and pieces of codes to help accelerate learning`,
-    siteUrl: `https://koreyio.netlify.app/`,
+    description: `korey.ml bits and pieces of codes to help accelerate learning`,
+    siteUrl: `https://korey.ml`,
     social: {
       twitter: `AdeyemiAdekore2`,
     },
