@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Adeyemi Adekorede Personal web app`,
+    title: `korey.ml`,
     author: `Adeyemi Adekorede`,
-    description: `korey.io bits and pieces of codes to help accelerate learning`,
-    siteUrl: `https://koreyio.netlify.app/`,
+    description: `korey.ml bits and pieces of codes to help accelerate learning`,
+    siteUrl: `https://korey.ml`,
     social: {
       twitter: `AdeyemiAdekore2`,
     },
@@ -67,8 +67,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `korey.io`,
-        short_name: `Korey.io`,
+        name: `korey.ml`,
+        short_name: `Korey.ml`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
