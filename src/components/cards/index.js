@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import GhImg from '../../img/svg/ghImg.svg'
+import browseImg from '../../img/svg/browse.svg';
 
 const Card = (props) => {
     const {img, title, link, details, repo} = props
@@ -19,7 +19,7 @@ const Card = (props) => {
                 <div className="card__details">
                     {details}
                 </div>
-                <a className="link" href={repo}><img src={GhImg}></img></a>
+                <a className="link " href={repo}><img className="card__link" src={browseImg}></img></a>
             </div>
 
         </div>
