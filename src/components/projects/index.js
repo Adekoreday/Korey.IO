@@ -11,7 +11,7 @@ const projects = () => {
                 img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_821,q_24/v1586213278/portfolio_gy1pgl.png"
                 link="#"
                 title="PORTFOLIO"
-                repo="https://github.com/Adekoreday/MyBlog-koreythoughts-"
+                repo="#"
                 details="This project contains my portfolio and blog(progress) built with react (gatsby)"
                 ></Card>
 
@@ -19,7 +19,7 @@ const projects = () => {
                 img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_872,q_21/v1586213274/banka_e3m9bv.png"
                 link="#"
                 title="BANKA"
-                repo="https://github.com/Adekoreday/Banka-React"
+                repo="https://banka-reactjs.herokuapp.com/"
                 details="banking app for medium/small scale banking operations"
                 ></Card>
 
@@ -27,7 +27,7 @@ const projects = () => {
                 img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_777/v1586213286/vlogin_epcjj4.png"
                 link="#"
                 title="VLOGIN"
-                repo="#"
+                repo="http://vlogin-staging.azurewebsites.net/"
                 details="An enterprise visitor management solution"
                 ></Card>
 
