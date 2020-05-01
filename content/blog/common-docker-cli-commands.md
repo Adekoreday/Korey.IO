@@ -9,28 +9,42 @@ tags:
   - Docker
 ---
 In the process of developing web Apps with Docker I find these commands useful.
-<p></p>
-This command pulls an image from docker hub
-```docker pull "image identifier"```
 
-<p></p>
+
+This command pulls an image from docker hub
+```bash
+docker pull "image identifier"
+```
+
+
 list all images on the machine
-`docker images `
-<p></p>
+```bash
+docker images 
+```
+
 list all containers on the machine
-`docker ps`
-<p></p>
+```bash
+docker ps
+```
+
 list all containers their size on disk and virtual size(the size the container and the image it's running on)
-`docker ps -s `
-<p></p>
+```bash
+docker ps -s
+ ```
+
 Start a specific container on your local machine
-`docker start "container name"`
-<p></p>
+```bash
+docker start "container name"
+
+```
+
 Stop a specific container on your local machine
 `docker stop "container name"`
 
-<p></p>
-`docker build -t imagename:tag . `
+
+```bash
+docker build -t imagename:tag . 
+```
 The above command adds an image name and optionally a tag with such name in the build command. Note the ` dot ` after the imagename:tag, this specifies the build context directory.
 
 The build context is a collection of files to be used by the build process while building the docker image.
@@ -38,23 +52,37 @@ The build context is a collection of files to be used by the build process while
 we can specify that build context should be from another path or Url
 then our command becomes
 
-`docker build -t imagename:tag  ./mypath `
+```
+docker build -t imagename:tag  ./mypath 
+```
 the above command specifies for path on my machine I want the build context to be.
-<p></p>
-`docker build -t imagename:tag  URL`
+
+```
+docker build -t imagename:tag  URL
+```
 replace the URL with maybe a repository URL where you want your build context to be.
-<p></p>
-`docker build -f dockerfiles/Dockerfile.debug  -t imagename:tag . `
+
+```bash
+docker build -f dockerfiles/Dockerfile.debug  -t imagename:tag . 
+
+```
 build image from a debug Dockerfile 
-<p></p>
-`docker build -f dockerfiles/Dockerfile.prod  -t new_imagename:tag . `
+
+```bash
+docker build -f dockerfiles/Dockerfile.prod  -t new_imagename:tag .
+
+```
 build image from a production Dockerfile
 
-<p></p>
-`docker run -p 49161:4000 -d adeyemiadekorede/auth`
-Runs the container on a specific port on the background.
-<p></p>
 
-`docker container ls -a`
+```bash 
+docker run -p 49161:4000 -d adeyemiadekorede/auth
+```
+Runs the container on a specific port on the background.
+
+
+```bash
+docker container ls -a
+```
 
 List all containers on the machine
