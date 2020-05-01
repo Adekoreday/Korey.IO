@@ -161,7 +161,7 @@ from the CSS style above, things to note is includes:
 
 These properties ensure the modal can scale up or down and be responsive.
 
-\###Making use of the modal component
+\### Making use of the modal component
 
 ```javascript
 import React,  { useState } from 'react';
