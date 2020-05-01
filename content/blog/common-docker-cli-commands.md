@@ -39,7 +39,9 @@ docker start "container name"
 ```
 
 Stop a specific container on your local machine
-`docker stop "container name"`
+```bash 
+docker stop "container name"
+```
 
 
 ```bash
