@@ -7,7 +7,7 @@ description: This is a tutorial which consist of how to build a light weight
 tags:
   - React
 ---
-Source code to this tutorial is found here {% github Adekoreday/Custom-React-Modal %}
+Source code to this tutorial is found here [Github](https://github.com/Adekoreday/Custom-React-Modal)
 
 Building a modal in react is challenging, most especially for beginners.
 
@@ -16,7 +16,7 @@ The question to ask is why would we want to implement a modal component from scr
 1. It helps to understand how the modal component works under the hood.
 2. External components tend to increase the overall project size, Building your reusable component ensures you have only what you need in your project i.e. not handling other scenarios that might come with an existing pre-built component which you might not need.
 
-\###Implementing the Modal component
+### Implementing the Modal component
 
 we create a modal.js file and add the following first
 
@@ -46,7 +46,7 @@ the above is almost all we need to implement the modal component, what I did was
 
 Also, note the children of the modal component would be rendered inside the `content` div.
 
-\####Implementing the close icon function: For the sake of this tutorial I used react font awesome icon.
+#### Implementing the close icon function: For the sake of this tutorial I used react font awesome icon.
 
 `npm i react-fontawesome`
 
@@ -78,7 +78,7 @@ The for the font awesome icon to be displayed add the following cdn to your publ
 
 Note: you can always choose to use an icon within your project and apply the above styling I used for my font-awesome icon and onClick property.
 
-\###The whole component so far
+### The whole component so far
 
 
 ```javascript
