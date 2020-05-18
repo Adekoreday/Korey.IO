@@ -65,7 +65,7 @@ const  logger = winston.createLogger({})
 		maxFiles:  '14d'
 	})
 ```
-- logg file will be created with name `application-date.log`
+- logg file will be created with name application-date.log
 -  loggs will be saved into a log folder in our root directory
 - Each log file will contain the loggs of the application in a day
 - After a day the logg file will be zipped to keep our growing file system in check
