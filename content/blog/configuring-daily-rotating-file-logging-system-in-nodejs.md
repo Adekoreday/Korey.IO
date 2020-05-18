@@ -48,7 +48,7 @@ For the above, we configured the logs to do the following
 ```
 const  logger = winston.createLogger({})
 ```
-- We configured new transport which is the medium we want to use to log our file called `winston.transports.DailyRotateFile`, our transport can also console.
+- We configured new transport which is the medium we want to use to log our file called winston.transports.DailyRotateFile, our transport can also console.
  we set our transport  attributes to the following
 
 ```js
