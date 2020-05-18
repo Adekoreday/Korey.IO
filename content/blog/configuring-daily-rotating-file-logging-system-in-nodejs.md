@@ -19,6 +19,12 @@ Keeping the  interaction history with the application is quite important in ever
 
 ## LOGGING CONFIGURATION
 
+Add the following package
+[winston](https://www.npmjs.com/package/winston) 
+```
+npm i winston
+```
+
 we create a logger.js file and add the following
 ```js
 import  *  as  winston  from  'winston';
