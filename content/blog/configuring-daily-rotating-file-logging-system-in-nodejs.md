@@ -100,6 +100,7 @@ we can optionally add our logger to our controller to log errors
 
 we create a separate file called serverResponse
 
+
 ```js
 import  logger  from  './logger';
 /**
@@ -120,9 +121,11 @@ export default serverResponse;
 
 ```
 
+
 This file will be used as a helper in our application to return our responses at the same time log the response to prevent repetitive code in the codebase.
 
 Below is how it can be used in a typical controller
+
 
 ```js
 import  serverResponse  from  './serverResponse';
@@ -138,6 +141,4 @@ serverResponse(req, res, 200, {msg: 'login successful'});
 	}
 }
 ```
-
-
 
