@@ -48,7 +48,7 @@ For the above, we configured the logs to do the following
 ```
 const  logger = winston.createLogger({})
 ```
-- We configured new transport which is the medium we want to use to log our file called winston.transports.DailyRotateFile, our transport can also console.
+- We configured new transport which is the medium we want to use to log our file called winston.transports.DailyRotateFile, our transport can also be of type console.
  we set our transport  attributes to the following
 
 ```js
@@ -65,11 +65,11 @@ const  logger = winston.createLogger({})
 		maxFiles:  '14d'
 	})
 ```
-- logg file will be created with name application-date.log
--  loggs will be saved into a log folder in our root directory
-- Each log file will contain the loggs of the application in a day
-- After a day the logg file will be zipped to keep our growing file system in check
-- After 14days we'll configure our loggs to be archived.
+- log file will be created with name application-date.log
+-  logs will be saved into a log folder in our root directory
+- Each log file will contain the logs of the application in a day
+- After a day the log file will be zipped to keep our growing file system in check
+- After 14days we'll configure our logs to be archived.
 
 For the winston logger we have various log level which are
 ```js
@@ -97,7 +97,6 @@ res.status(500).send('server error, this will be resolved shortly!')
 ```
 
 we can optionally add our logger to our controller to log errors 
-
 we create a separate file called serverResponse
 
 
@@ -107,7 +106,7 @@ import  logger  from  './logger';
 * @name  serverResponse
 * @param  {Object}  res express response object
 * @param  {Number}  code status code to return
-* @param  {Ojectb}  data object with response details
+* @param  {Object}  data object with response details
 * @returns  {JSON} JSON response with status and response information
 */
 const  serverResponse = (req, res, code, data) => {
