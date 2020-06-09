@@ -132,7 +132,7 @@ data-sal-easing="easeInBack"
                 <Range 
                 proficiency={70}
                 />
-                <span className="medium__text">70%</span>
+                <span className="medium__text">75%</span>
                 </div>
             </div>
             <div>
@@ -142,6 +142,15 @@ data-sal-easing="easeInBack"
                 proficiency={70}
                 />
                 <span className="medium__text">70%</span>
+                </div>
+            </div>
+            <div>
+                <div className="range__container">
+                <span className="inline__text">AWS</span>
+                <Range 
+                proficiency={75}
+                />
+                <span className="medium__text">75%</span>
                 </div>
             </div>
             <div>
