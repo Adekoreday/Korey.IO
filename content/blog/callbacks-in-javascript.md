@@ -12,11 +12,10 @@ tags:
 
 The callback pattern is a javascript asynchronous pattern that enables us to run asynchronous functions one after the other.
 
-### What is an asynchronous function ?
-An asynchronous function is a long running function which doesn't block the  execution thread and gets executed later by javascript instead of immediately.
-these are promise based functions e.g setTimeout()
+## What is an asynchronous function ?
+An asynchronous function is a long-running function that doesn't block the execution thread and gets executed later by javascript instead of immediately. e.g setTimeout()
 
-### How  Callbacks works ?
+## How  Callbacks works ?
 ```javascript
 function delay(duration, done) {
 
@@ -53,6 +52,6 @@ two seconds delay
 three seconds delay
 ```
 
-From the above you can see we deffered  of the asynchronous function delay didn't block the thread execution because the section `another block of code` came before it. but the set of asynchronous code gets executed in the appropiate order.
+From the above you can see we deffered the asynchronous function `delay` didn't block the thread execution because the section `another block of code` came before it. but the set of asynchronous code gets executed in the appropiate order.
 
-Callbacks have some disadvantages as the above code seems difficult to read resulting to an anti pattern called callback hell. We'll expore better approaches in the next post
+Callbacks have some disadvantages as the above code seems difficult to read resulting in an anti pattern called callback hell. We'll expore better approaches in the next post
