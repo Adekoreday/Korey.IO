@@ -28,13 +28,17 @@ setTimeout(done, duration*1000);
 
   delay(2, () => {
 
-    console.log('two seconds delay')
+      console.log('two seconds delay')
 
-    delay(3, () => {
+      delay(3, () => {
 
-    console.log('three seconds delay')
+      console.log('three seconds delay')
+
+      })
+
   })
-})
+
+
 console.log('another block of code')
 
 
