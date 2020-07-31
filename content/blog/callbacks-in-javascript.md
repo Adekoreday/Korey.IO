@@ -49,4 +49,4 @@ three seconds delay
 
 From the above you can see we deffered  of the asynchronous function delay didn't block the thread execution because the section `another block of code` came before it. but the set of asynchronous code gets executed in the appropiate order.
 
-Callbacks have some disadvantages as the above code seems difficult to read we'll expore better approaches in the next post
+Callbacks have some disadvantages as the above code seems difficult to read resulting to an anti pattern called callback hell. We'll expore better approaches in the next post
