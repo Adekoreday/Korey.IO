@@ -24,18 +24,20 @@ setTimeout(done, duration*1000);
 
 }
 
-console.log('starting delay');
+  console.log('starting delay');
 
-delay(2, () => {
+  delay(2, () => {
 
-console.log('two seconds delay')
+    console.log('two seconds delay')
 
-delay(3, () => {
+    delay(3, () => {
 
-console.log('three seconds delay')
-})
+    console.log('three seconds delay')
+  })
 })
 console.log('another block of code')
+
+
 ```
 
 if you copy the above code to any javascript environment and run you'll have the following output
