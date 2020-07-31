@@ -17,7 +17,7 @@ An asynchronous function is a long running function which doesn't block the  exe
 these are promise based functions e.g setTimeout()
 
 ### How  Callbacks works ?
-```
+```javascript
 function delay(duration, done) {
 
 setTimeout(done, duration*1000);
