@@ -45,11 +45,11 @@ three seconds delay
 ```
 
 ## What is happened in the above Code?
-1. At Line 1 I declared a function called **delay** which takes in a callback function **done** as an argument
+1. At Line 1, I declared a function called **delay** which takes in a callback function **done** as an argument
 
-2.Then I execute the **delay** function and passed the **done** function implementation as a Callback.
+2. Then I execute the **delay** function and passed the **done** function implementation as a Callback.
 
-3.The **done** callback function gets executed after the delay by calling another delay function. _Note: instead of calling delay again it could call any other function_
+3. The **done** callback function gets executed after the delay by calling another delay function. _Note: instead of calling delay again it could call any other function_
 
 
 ## Result Interpretation
