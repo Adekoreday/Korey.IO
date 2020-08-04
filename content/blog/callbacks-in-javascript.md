@@ -53,7 +53,7 @@ three seconds delay
 
 
 ## Result Interpretation
-from the result interpretation, the asychronous functions get executed in the appropriate order hence bringing the need for callbacks.
+from the result interpretation, the asynchronous functions get executed in the appropriate order hence bringing the need for callbacks.
 
 if we didn't implement the function in a callback manner we wouldn't be able to execute the asynchronous function in the right order.
 
