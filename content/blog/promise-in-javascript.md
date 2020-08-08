@@ -9,14 +9,14 @@ tags:
 ---
 # Promise in Javascript
 
-In the [previous]([https://korey.ml/callbacks-in-javascript/](https://korey.ml/callbacks-in-javascript/)) post we talked about callbacks in javascript and why they are needed.
+In the previous post, we talked about callbacks in javascript and why they are needed.
 
-The promise based syntax provides a more readable aproach of handling asynchronous functions in javascript.
-With Promise we can execute our asychronous functions in the appropriate order with robust error handling functionality.
+The promise-based syntax provides a more readable approach of handling asynchronous functions in javascript.
+With Promise, we can execute our asynchronous functions in the appropriate order with robust error handling functionality.
 
-## How  Promise works ?
+## How  Promise works?
 
-Applying promise to our   [previous]([https://korey.ml/callbacks-in-javascript/](https://korey.ml/callbacks-in-javascript/)) post on callback we have the following
+Applying promise to our previous post on callback we have the following
 ```javascript
 const delay = (seconds) => new Promise((resolve, reject) => {
 						   setTimeout(() => {
@@ -37,7 +37,7 @@ delay(6)
 if you copy the above code to any javascript environment and run you'll have the following output
 
 ```bash
-before delay!!
+before the delay!!
 Promise { <pending> }
 executing delay 2 seconds
 executing delay 3 seconds
@@ -47,7 +47,7 @@ this delay is done at 6
 
 ## What happened in the code above :smiley:
 
-The above code executes a 2seconds delay first, then by 3seconds and lastly 6seconds then prints out the appropriate response.
+The above code executes a 2seconds delay first, then by 3seconds and lastly, 6seconds then prints out the appropriate response.
 
 ## How Did we use Promise 
 First we made the delay function to return a promise as follows
@@ -67,7 +67,7 @@ A  `Promise`  is in one of these states:
 -   _fulfilled_: meaning that the operation completed successfully.
 -   _rejected_: meaning that the operation failed.
 
-Note: A Promise takes two parameters which is 
+Note: A Promise takes two parameters which are
 1. **resolve**: puts the promise in the fulfilled stage.
 2.  **reject**:  puts the promise in the rejected stage.
 
@@ -87,11 +87,11 @@ delay(6)
 .catch(err => console.log(err))
 ```
 
-After  a promise execute and its state is known i.e. fulfilled or rejected. We use the following to make further actions on the promise.
+After a promise execute and its state is known i.e. fulfilled or rejected. We use the following to take further actions on the promise.
 
-1. `Promise.then`
-2. `Promise.catch`
-3. `Promise.finally`
+1.  Promise.then
+2. Promise.catch
+3. Promise.finally
 
 ### Promise.then
 In our case the  `then` function handle the last promise returned by `delay(6)` . 
@@ -100,7 +100,7 @@ The `then` function receives two parameters the
 
 i) `promise response` i.e. the object/value returned by the promise
 ii) `promise error`  i.e. the error returned by the promise if any
-inside the `.then` we can write a logic to handle such promise accodingly in our own case we simply printed to the console
+inside the `.then` we can write a logic to handle such promise accordingly in our own case we simply printed to the console
 
 ```javascript
 .then(
