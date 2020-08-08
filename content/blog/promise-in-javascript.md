@@ -17,7 +17,7 @@ With Promise we can execute our asychronous functions in the appropriate order w
 ## How  Promise works ?
 
 Applying promise to our   [previous]([https://korey.ml/callbacks-in-javascript/](https://korey.ml/callbacks-in-javascript/)) post on callback we have the following
-```
+```javascript
 const delay = (seconds) => new Promise((resolve, reject) => {
 						   setTimeout(() => {
 							   console.log(`executing delay ${seconds} seconds`)
@@ -51,7 +51,7 @@ The above code executes a 2seconds delay first, then by 3seconds and lastly 6sec
 
 ## How Did we use Promise 
 First we made the delay function to return a promise as follows
-```
+```javascript
 const delay = (seconds) => new Promise((resolve, reject) => {
                                if(seconds > 5) return reject('seconds more than 5')
 							   setTimeout(() => {
@@ -76,7 +76,7 @@ From the above a delay function the promise is `rejected` if the value of second
 ## How Did we execute the promise
 
 We executed the promise in the following section
-```
+```javascript
 console.log('before delay!!')
 delay(2)
 delay(3)
@@ -102,7 +102,7 @@ i) `promise response` i.e. the object/value returned by the promise
 ii) `promise error`  i.e. the error returned by the promise if any
 inside the `.then` we can write a logic to handle such promise accodingly in our own case we simply printed to the console
 
-```
+```javascript
 .then(
 (res) => console.log(`this delay is done at ${res}`),
 (rej) => console.log(`the error caught is ${rej}`))
@@ -113,7 +113,7 @@ inside the `.then` we can write a logic to handle such promise accodingly in our
 
 In `.catch` method is used to handle all errors which have not been handled by the `.then` function
 In our case we do the following
-```
+```javascript
 .catch(err => console.log(err))
 ```
 ### Promise.finally
@@ -123,7 +123,7 @@ e.g. we can close an opened file which we opened during our promise execution he
 ## Promise chaining
 
  Assume we have two delay functions which returns a promise
-```
+```javascript
 const delay1 = (seconds) => new Promise((resolve, reject) => {
                                if(seconds > 5) return reject('seconds more than 5')
 							   setTimeout(() => {
@@ -142,7 +142,7 @@ const delay2 = (seconds) => new Promise((resolve, reject) => {
 ```
 
 We can chain the above promise exactly like this 
-```
+```javascript
 delay1(5) //returns 5
 .then(res => delay2(res)) //res=5
 .then(delay2) //also receives 5 as argument
