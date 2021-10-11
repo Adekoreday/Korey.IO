@@ -42,6 +42,7 @@
 
 .range__container{
     display: flex;
+    justify-content: space-around;
 }
 
 .hero__layout{

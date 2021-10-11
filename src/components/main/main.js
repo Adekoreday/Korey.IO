@@ -31,7 +31,6 @@ const Main = () => {
             </div>
             </div>
             <img className="smaller__bg" src={smBgSvg} alt="bg-logo" />
-            <img className="medium__bg"  src={mdSvg} alt="bg-logo" />
             </div>
             <img className="side__img" src={semiCircleSvg} alt="bg-logo" />
         </div>
