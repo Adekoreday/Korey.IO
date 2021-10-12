@@ -15,10 +15,10 @@ const Main = () => {
         >
             <div className="main__bg">
             <div 
-                    data-sal="slide-right"
-                    data-sal-delay="30"
-                    data-sal-duration="100000"
-                    data-sal-easing="easeInBack"
+            data-sal="slide-right"
+            data-sal-delay="30"
+            data-sal-duration="100000"
+            data-sal-easing="easeInBack"
             className="bg__logo">
             <img className="main__content" src={bgSvg} alt="bg-logo" />
             <img className="main__profile" src={profileSvg} alt="bg-logo" />
