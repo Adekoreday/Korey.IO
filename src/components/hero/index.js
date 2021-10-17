@@ -106,7 +106,7 @@ const Hero = () => {
               <HeroIcon img={NunitImg} description="Nunit" />
             </div>
             <div className="range__container">
-              <HeroIcon img={RTLImg} description="React Testing Library" />
+              <HeroIcon img={RTLImg} description="RTL" />
               <HeroIcon img={CoverAllImg} description="CoverALLS" />
               <HeroIcon img={TravisImg} description="Travis CI" />
               <HeroIcon img={CircleCI} description="Circle CI" />
