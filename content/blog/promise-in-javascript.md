@@ -18,20 +18,24 @@ With Promise, we can execute our asynchronous functions in the appropriate order
 
 Applying promise to our previous post on callback we have the following
 ```javascript
-const delay = (seconds) => new Promise((resolve, reject) => {
-						   setTimeout(() => {
-							   console.log(`executing delay ${seconds} seconds`)
-							   resolve(seconds)}, seconds*1000)
-			   })
+const delay = (seconds) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(`executing delay ${seconds} seconds`);
+      resolve(seconds);
+    }, seconds * 1000);
+  });
 
-console.log('before delay!!')
-delay(2)
-delay(3)
+console.log("before delay!!");
+delay(2);
+delay(3);
 delay(6)
-.then(
-(res) => console.log(`this delay is done at ${res}`),
-(rej) => console.log(`the error caught is ${rej}`))
-.catch(err => console.log(err))
+  .then(
+    (res) => console.log(`this delay is done at ${res}`),
+    (rej) => console.log(`the error caught is ${rej}`)
+  )
+  .catch((err) => console.log(err));
+
 ```
 
 if you copy the above code to any javascript environment and run you'll have the following output
@@ -52,12 +56,15 @@ The above code executes a 2seconds delay first, then by 3seconds and lastly, 6se
 ## How Did we use Promise 
 First we made the delay function to return a promise as follows
 ```javascript
-const delay = (seconds) => new Promise((resolve, reject) => {
-                               if(seconds > 5) return reject('seconds more than 5')
-							   setTimeout(() => {
-							   console.log(`executing delay ${seconds} seconds`)
-							   resolve(seconds)}, seconds*1000)
-			   })
+const delay = (seconds) =>
+  new Promise((resolve, reject) => {
+    if (seconds > 5) return reject("seconds more than 5");
+    setTimeout(() => {
+      console.log(`executing delay ${seconds} seconds`);
+      resolve(seconds);
+    }, seconds * 1000);
+  });
+
 ```
 _Note_: we added an if statement here to cause a promise rejection based on number of seconds as opposed from the initial code written
 
@@ -124,28 +131,33 @@ e.g. we can close an opened file which we opened during our promise execution he
 
  Assume we have two delay functions which returns a promise
 ```javascript
-const delay1 = (seconds) => new Promise((resolve, reject) => {
-                               if(seconds > 5) return reject('seconds more than 5')
-							   setTimeout(() => {
-							   console.log(`executing delay ${seconds} seconds`)
-							   resolve(seconds)}, seconds*1000)
-			   })
+const delay1 = (seconds) =>
+  new Promise((resolve, reject) => {
+    if (seconds > 5) return reject("seconds more than 5");
+    setTimeout(() => {
+      console.log(`executing delay ${seconds} seconds`);
+      resolve(seconds);
+    }, seconds * 1000);
+  });
 
+const delay2 = (seconds) =>
+  new Promise((resolve, reject) => {
+    if (seconds > 5) return reject("seconds more than 5");
+    setTimeout(() => {
+      console.log(`executing delay ${seconds} seconds`);
+      resolve(seconds);
+    }, seconds * 1000);
+  });
 
-const delay2 = (seconds) => new Promise((resolve, reject) => {
-                               if(seconds > 5) return reject('seconds more than 5')
-							   setTimeout(() => {
-							   console.log(`executing delay ${seconds} seconds`)
-							   resolve(seconds)}, seconds*1000)
-			   })
 
 ```
 
 We can chain the above promise exactly like this 
 ```javascript
 delay1(5) //returns 5
-.then(res => delay2(res)) //res=5
-.then(delay2) //also receives 5 as argument
+  .then((res) => delay2(res)) //res=5
+  .then(delay2); //also receives 5 as argument
+
 ```
 The output is
 
