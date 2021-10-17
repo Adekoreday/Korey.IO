@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = "Adeyemi Adekorede Personal Website"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

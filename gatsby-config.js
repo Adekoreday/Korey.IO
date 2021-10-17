@@ -10,14 +10,20 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-scroll-reveal`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

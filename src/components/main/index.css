@@ -6,7 +6,20 @@
     justify-content: flex-start;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1340px) {
+   .side__img{
+    display: none;   
+    } 
+
+    .bg__logo{
+    margin: 0rem !important;
+}
+}
+
+
+
+
+@media only screen and (max-width: 1018px) {
 .main__container{
     display: block;
     width: 100vw;
@@ -53,9 +66,6 @@
     display: none;   
     }
 }
-
-
-
 
 
 .main__bg{
