@@ -116,7 +116,7 @@ const Hero = () => {
             <h1 style={{ color: `#FFFFFF` }}>DEVOPS</h1>
             <div className="range__container">
               <HeroIcon img={KubernetesImg} description="Kubernetes" />
-              <HeroIcon img={HelmImg} description="Helm Charts" />
+              <HeroIcon img={HelmImg} description="Helm" />
               <HeroIcon img={DockerImg} description="Docker" />
               <HeroIcon img={ShellImg} description="Shell Script" />
             </div>
