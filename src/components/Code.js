@@ -12,6 +12,11 @@ import {
 
 
 export const Pre = styled.pre`
+         @media (max-width: 768px) {
+           font-size: 12px;
+           margin: 3rem 0;
+           padding: 2rem 1rem;
+         }
          text-align: left;
          margin: 5rem 0;
          padding: 3rem 2rem;

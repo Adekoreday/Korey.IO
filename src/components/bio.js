@@ -49,8 +49,7 @@ function Bio() {
                   You can follow him on Twitter
                 </a> */}
                 <Content>
-                  A passionate software engineer with love for technology and
-                  teaching.<br></br> I currently work remotely from Lagos
+                  I'm passionate about technology and currently work remotely from Lagos
                   (Nigeria) as a software engineer at MindRight Health (New
                   jersey, USA). You can support my work or reach out by
                   connecting with me.
