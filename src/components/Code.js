@@ -20,7 +20,8 @@ export const Pre = styled.pre`
          text-align: left;
          margin: 5rem 0;
          padding: 3rem 2rem;
-         overflow-x: auto;
+         overflow-x: scroll;
+         -webkit-overflow-scrolling: touch;
          border-radius: 3px;
          font-size: 16px;
          & .token {
