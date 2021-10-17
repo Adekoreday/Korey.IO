@@ -6,7 +6,7 @@ import Code from './src/components/Code';
 const components = {
     
     'p.inlineCode': props => (
-        <code style={{ backgroundColor: 'lightgray', fontSize: '14px' }} {...props}/>
+        <code style={{ backgroundColor: 'lightgray', fontSize: '14px', padding: "0.5rem" }} {...props}/>
       ),
     pre: (props) => {
         const className = props.children.props.className || '';

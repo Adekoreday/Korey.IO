@@ -12,19 +12,20 @@ import {
 
 
 export const Pre = styled.pre`
-  text-align: left;
-  margin: 1em 0;
-  padding: 0.5em;
-  overflow-x: auto;
-  border-radius: 3px;
-  font-size: 14px;
-
-  & .token-line {
-    line-height: 1.3em;
-    height: 1.3em;
-  }
-  font-family: 'Courier New', Courier, monospace;
-`;
+         text-align: left;
+         margin: 5rem 0;
+         padding: 3rem 2rem;
+         overflow-x: auto;
+         border-radius: 3px;
+         font-size: 16px;
+         & .token {
+           font-family: Consolas, "Courier New", "monospace" !important;
+         }
+         & .token-line {
+           line-height: 4.5rem;
+           height: 2rem;
+         }
+       `
 
 export const LineNo = styled.span`
   display: inline-block;
