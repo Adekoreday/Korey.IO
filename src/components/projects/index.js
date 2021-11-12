@@ -15,26 +15,35 @@ const projects = () => {
                 details="This project contains my portfolio and blog(progress) built with react (gatsby)"
                 ></Card>
 <Card
-                img="https://res.cloudinary.com/kaytronics/image/upload/v1609112666/Screenshot_2020-12-28_at_00.43.41_neuzy7.png"
+                img="https://res.cloudinary.com/kaytronics/image/upload/v1636702019/Screenshot_2021-11-12_at_08.26.53_c6nan4.png"
                 link="#"
-                title="STARTUP LAGOS"
-                repo="https://startuplagos.net"
-                details="A platform that connects all stakeholders in Africa's Tech space"
+                title="GIT PAY"
+                repo="https://gitpay.me"
+                details="A platform that allows bounties for issues on demand. Be rewarded by learning, using Git workflow and continuous integration"
                 ></Card>
                 <Card
-                img="https://res.cloudinary.com/kaytronics/image/upload/v1609113209/Screenshot_2020-12-28_at_00.53.04_aip5l7.png"
+                img="https://res.cloudinary.com/kaytronics/image/upload/v1636701804/Screenshot_2021-11-12_at_08.23.16_kvrljt.png"
                 link="#"
-                title="BLOSSOM"
-                repo="https://www.blossom.vc"
-                details="A venture capital deal sourcing intelligence platform"
+                title="MindRight"
+                repo="https://www.mindright.io"
+                details="Culturally-responsive, daily coaching over text message for people who want to talk, judgment free platform"
                 ></Card>
 
 <Card
-                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_872,q_21/v1586213274/banka_e3m9bv.png"
+                img="https://res.cloudinary.com/kaytronics/image/upload/v1636702175/Screenshot_2021-11-12_at_08.29.27_emkrz1.png"
                 link="#"
-                title="BANKA"
-                repo="https://banka-reactjs.herokuapp.com/"
-                details="banking app for medium/small scale banking operations"
+                title="DataField Consulting"
+                repo="https://www.datafieldconsulting.com"
+                details="business insights and analytics platform"
+                ></Card>
+
+
+<Card
+                img="https://res.cloudinary.com/kaytronics/image/upload/v1636702354/Screenshot_2021-11-12_at_08.32.26_lrhbpf.png"
+                link="#"
+                title="Startup Lagos"
+                repo="https://www.startuplagos.net"
+                details="A platform that connects all stakeholders in Africa's Tech space"
                 ></Card>
 
                 <Card
@@ -43,14 +52,6 @@ const projects = () => {
                 title="VLOGIN"
                 repo="http://vlogin-staging.azurewebsites.net/"
                 details="An enterprise visitor management solution"
-                ></Card>
-
-                <Card
-                img="https://res.cloudinary.com/kaytronics/image/upload/c_scale,h_747,q_29/v1586213274/mint_knaezl.png"
-                link="#"
-                title="MINT DASHBOARD"
-                repo="https://github.com/Adekoreday/BANKWITHMINT"
-                details="A dashboard template developed with react"
                 ></Card>
             </div>
         </div>
