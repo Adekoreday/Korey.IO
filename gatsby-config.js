@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `korey.ml`,
+    title: `korey.sh`,
     author: `Adeyemi Adekorede`,
-    description: `korey.ml bits and pieces of codes to help accelerate learning`,
-    siteUrl: `https://korey.ml`,
+    description: `korey.sh bits and pieces of codes to help accelerate learning`,
+    siteUrl: `https://korey.sh`,
     social: {
       twitter: `AdeyemiAdekore2`,
     },
