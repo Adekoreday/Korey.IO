@@ -2,7 +2,9 @@
 path: ./content
 date: 2021-11-13T06:26:19.573Z
 title: "# **10 Tips to Succeed in Your New Software Engineering Role**"
-description: Mentorship
+description: 10 Tips to Succeed in Your New Software Engineering Role
+tags:
+  - Mentorship
 ---
 
 
