@@ -72,3 +72,5 @@ The Event loop works by performing tick, the following below occours on every ti
 
 
 After all the pending tasks in the event loop have been executed the node.js program exits.
+
+Awesome, Congrats for making it this far. I know that might seem to be a lot but take time to read through. I believe I might have triggered your curiosity so take out more time to further research on this. kindly reach out to me on any of my handles if you need any more sort of clarity will do my best to respond.
