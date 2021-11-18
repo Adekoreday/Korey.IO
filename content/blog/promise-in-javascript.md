@@ -6,6 +6,7 @@ description: An introduction to promise in javascript, a continuation of
   aynchronous patterns in javascript
 tags:
   - Nodejs
+  - javascript
 ---
 # Promise in Javascript
 
