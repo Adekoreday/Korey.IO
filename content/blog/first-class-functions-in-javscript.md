@@ -27,8 +27,6 @@ welcome(); //prints 'hello world'
 
 ```javascript
 
-/*The function would accept a function as a parameter and call it. Kindly note in javascript it's better to double check if the argument is a function using typeof before calling it.*/
-
 function CallPrintFunction (func) {
 
   if (typeof func === 'function') func(); 
@@ -36,6 +34,9 @@ function CallPrintFunction (func) {
 }
 
 ```
+
+The CallPrintFunction function would accept a function as a parameter and call it. Kindly note in javascript it's better to double check if the argument is a function using typeof before calling it.
+
 
 To use the above CallPrintFunction simply do the following
 
