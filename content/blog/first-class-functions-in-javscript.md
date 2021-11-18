@@ -5,7 +5,7 @@ title: First Class Functions In Javscript
 description: This post highlight short and concise description of first class
   functions in Javascript
 tags:
-  - Javascript
+  - javascript
 ---
 A programming language is said to have first-class functions when functions in that language are treated like any other variable.
 
