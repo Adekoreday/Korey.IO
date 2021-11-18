@@ -19,7 +19,7 @@ As a result, they exist in Javascript.
 ```javascript
 
 const welcome = () => console.log('hello world');
-
+welcome(); //prints 'hello world'
 ```
 
 
