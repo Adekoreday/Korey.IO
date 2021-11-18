@@ -13,7 +13,8 @@ This means, in such a language, a function can be passed as an argument to other
 
 As a result, they exist in Javascript.
 
-As a variable 
+
+### As a variable 
 
 ```javascript
 
@@ -21,7 +22,8 @@ const welcome = () => console.log('hello world');
 
 ```
 
-As an Argument
+
+### As an Argument
 
 ```javascript
 
@@ -43,7 +45,8 @@ CallPrintFunction(welcome);
 
 ```
 
-Returned from another function
+
+### Returned from another function
 
 ```javascript
 
@@ -60,6 +63,8 @@ To use the ReturnWelcome function above i.e. call the function returned simply d
 ```
 ReturnWelcome()();
 ```
+
+This one is pretty interesting since you can leverage closures to even enhance your returned function. Making another short post on closures soon I promise it would be straight forward.
 
 
 That's it Guys! . thanks for going through.
